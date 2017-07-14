@@ -1,12 +1,12 @@
 <template>
-<q-layout>
+
   <div class="view-parallax">
     <div class="layout-padding">
       <p class="caption">
         Scroll down (best using scrollbar instead of mouse scroll if on desktop) to see Parallax in action.
       </p>
 
-      <p v-for="n in 7" class="par-text">{{loremipsum}}</p>
+      <p v-for="n in 2" class="par-text">{{loremipsum}}</p>
     </div>
 
     <q-parallax :src="'statics/parallax1.jpg'" :height="200">
@@ -36,7 +36,7 @@
       <p v-for="n in 7" class="par-text">{{loremipsum}}</p>
     </div>
 
-    <q-parallax :src="'statics/mountains.jpg'" :height="200">
+    <q-parallax :src="'statics/parallax1.jpg'" :height="200">
       <div slot="loading">Loading...</div>
       <h1>Mountains</h1>
     </q-parallax>
@@ -46,19 +46,7 @@
     </div>
   </div>
 
-  <!--
-      Replace following "div" with
-      "<router-view class="layout-view">" component
-      if using subRoutes
-    -->
-  <div class="layout-view">
-    <div class="logo-container non-selectable no-pointer-events">
-      <div class="logo" :style="position">
-        <img src="~assets/quasar-logo.png">
-      </div>
-    </div>
-  </div>
-</q-layout>
+
 </template>
 
 <script>
@@ -155,15 +143,15 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      if (this.orienting) {
-        window.addEventListener('deviceorientation', this.orient, false)
-      } else if (this.rotating) {
-        window.addEventListener('devicemove', this.rotate, false)
-      } else {
-        document.addEventListener('mousemove', this.move)
-      }
-    })
+    // this.$nextTick(() => {
+    //   if (this.orienting) {
+    //     window.addEventListener('deviceorientation', this.orient, false)
+    //   } else if (this.rotating) {
+    //     window.addEventListener('devicemove', this.rotate, false)
+    //   } else {
+    //     document.addEventListener('mousemove', this.move)
+    //   }
+    // })
   },
   beforeDestroy() {
     if (this.orienting) {
@@ -182,7 +170,7 @@ export default {
   /*width 192px
   height 268px*/
   perspective 800px
-  position absolute
+  /*position absolute*/
   top 50%
   left 50%
   transform translateX(-50%) translateY(-50%)

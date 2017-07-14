@@ -24,7 +24,13 @@
   <q-drawer ref="leftDrawer">
     <div class="list no-border platform-delimiter">
       <q-toolbar-title :padding="1">
-        Dynamic Title
+        Dynamic Title Index
+      </q-toolbar-title>
+      <q-toolbar-title :padding="1">
+        Dynamic Title Index
+      </q-toolbar-title>
+      <q-toolbar-title :padding="1">
+        Dynamic Title Index
       </q-toolbar-title>
     </div>
   </q-drawer>
@@ -34,7 +40,7 @@
 
   <!-- Footer  -->
   <div slot="footer" class="toolbar">
-    <p>Footer information</p>
+    <p>Footer information Copyright</p>
   </div>
 
 </q-layout>
