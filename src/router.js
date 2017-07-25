@@ -22,7 +22,9 @@ export default new VueRouter({
 
   routes: [
     { path: '/intro', component: load('Index') }, // Default
-    { path: '/', component: load('layout/main-layout') }, // Main-Layout
+
+    { path: '/testing', component: load('testing') }, // Default
+        { path: '/', component: load('layout/main-layout') }, // Main-Layout
     { path: '*', component: load('Error404') } // Not found
   ]
 })

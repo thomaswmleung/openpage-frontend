@@ -1,8 +1,8 @@
 {
-  "name": "quasar-app",
+  "name": "openpage-app",
   "version": "0.0.1",
-  "description": "A Quasar App",
-  "author": "Your Name",
+  "description": "Component Library for all OpenPage Application",
+  "author": "Tommy Lam",
   "scripts": {
     "clean": "node build/script.clean.js",
     "dev": "node build/script.dev.js",
@@ -16,7 +16,7 @@
     "lodash": "^4.17.4",
     "material-design-icons": "^3.0.1",
     "moment": "^2.15.0",
-    "quasar-framework": "^0.13.4",
+    "quasar-framework": "^0.13.10",
     "roboto-fontface": "^0.7.0",
     "vue": "^2.3.0",
     "vue-i18n": "^7.0.5",

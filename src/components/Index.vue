@@ -20,7 +20,11 @@
 
     <q-parallax :src="'statics/parallax2.jpg'">
       <div slot="loading">Loading...</div>
-      <h1>Bridge</h1>
+      <div class="card" style="">
+
+      </div>
+      <!-- <img src="http://pngimg.com/uploads/smoke/smoke_PNG962.png" alt=""> -->
+    <h1>Bridge</h1>
     </q-parallax>
 
     <div class="layout-padding">

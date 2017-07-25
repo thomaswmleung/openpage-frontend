@@ -3813,7 +3813,7 @@ qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-quasar-framework@^0.13.4:
+quasar-framework@^0.13.10:
   version "0.13.10"
   resolved "https://registry.yarnpkg.com/quasar-framework/-/quasar-framework-0.13.10.tgz#fd5e813cc9c75220c92f587b19525423ff7aa6f8"
 
