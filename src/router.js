@@ -24,6 +24,7 @@ export default new VueRouter({
     { path: '/intro', component: load('Index') }, // Default
 
     { path: '/testing', component: load('testing') }, // Default
+    { path: '/testing', component: load('testing_tommy') }, // Default
         { path: '/', component: load('layout/main-layout') }, // Main-Layout
     { path: '*', component: load('Error404') } // Not found
   ]
