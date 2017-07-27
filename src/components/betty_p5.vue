@@ -124,17 +124,17 @@ text-align: center;">
   <img src="statics/popup_text_1a.png"></img>
     <q-popover ref="popover" style="background:none;box-shadow:none">
       <div style="padding-left: 0px;"><img src="statics/popup_boardtop_1a.png"></div>
-      <div class="list no-border" style="width: 182px;margin-left: 18px;margin-top: -25px;">
+      <div class="list no-border" style="width: 185px;margin-left: 18px;margin-top: -25px;">
       <div v-for="type in row_type" class="item item-link" style="background-color: #000" @click="popup_handler()"  >
         <img class="label bg-black text-white" :src="type.image" >
         <h9>{{type.label}}</h9>
       </div>
-      <div style="padding-left: -10px;width: 180px;margin-top: -10px;margin-left: -17px;">
+      <div style="padding-left: -12px; width: 180px; margin-top: -10px; margin-left: -18px;">
         <img src="statics/popup_boardbottom_1a.png"></div>
       </div>
     </q-popover>
 
-  <input class="text" maxlength="16" :value="'Demo String ' + n" style="width: 260px;">
+  <input class="text" maxlength="16" :value="'Demo String' + n" style="width: 260px;">
 
 </div>
 

@@ -110,7 +110,7 @@
   </div>
 
 
-<div class="row wrap text-center" style=" overflow-x: scroll; background:lightgrey; width: 100%;">
+<div class="row wrap text-center" style=" overflow-x: scroll; background:white; width: 100%;">
 
  <div class="wrapper">
 
@@ -124,6 +124,12 @@
     Text Text Text Text
     </p>
     <button class="button9">MORE</button></div>
+
+
+////
+
+
+
 
 
 </div></div>

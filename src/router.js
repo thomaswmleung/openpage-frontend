@@ -26,8 +26,11 @@ export default new VueRouter({
     { path: '/testing', component: load('testing') }, // Default
     { path: '/betty_op1', component: load('betty_op1') }, //
     { path: '/betty_p0', component: load('betty_p0') }, //
+    { path: '/betty_p2', component: load('betty_p2') }, //
+    { path: '/betty_p3', component: load('betty_p3') }, //
     { path: '/betty_p4', component: load('betty_p4') }, //
-    { path: '/betty_p5', component: load('betty_p5') }, // 
+    { path: '/betty_p5', component: load('betty_p5') }, //
+    { path: '/betty_test', component: load('betty_test') }, // testing
         { path: '/', component: load('layout/main-layout') }, // Main-Layout
     { path: '*', component: load('Error404') } // Not found
   ]

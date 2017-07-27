@@ -42,11 +42,11 @@
       </button>
 
       <button style="color: black;">
-        <i class="material-icons" >search</i>
+        <img src="statics/header_flash_1a.png" >
        </button>
 
        <button style="color: black;">
-         <i class="material-icons">wallpaper</i>
+         <img src="statics/header_filter_1a.png" >
        </button>
 
       <q-toolbar-title :padding="0" style="
@@ -79,10 +79,10 @@
     padding-left: 0.5em;
     padding-top: 0.4em;" >
 
-<div style="
-font-size: 14px;
-font-family: Helvetica, sans-serif;
-font-weight: bold;">
+  <div style="
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;">
   BL</div></div>
 
 
@@ -109,55 +109,26 @@ font-weight: bold;">
   </div>
   </div>
 
-<!-- overflow-x: scroll;  -->
-<!-- row wrap text-center -->
-<div style="background:lightgrey; width: 100%;">
 
-<h7><img class="card-img-top" src="statics/op_rigside_1a.png" width="25px" height="60px"></h7>
- <div class="wrapper">
-
-   <div>
-     <div class="layout-padding">
-       <div style="
-text-align: center;">
-
-<!-- Row Start, Make a better format for easily to see the dependence -->
-<div class="label bg-white" v-for="n in 30" style="margin-bottom:0.3em">
- <q-popover ref="popover" style="background:none;box-shadow:none">
-   <div style="padding-left: 0px;"><img src="statics/popup_boardtop_1a.png"></div>
-   <div class="list no-border" style="width: 182px;margin-left: 18px;margin-top: -25px;">
-   <div v-for="type in row_type" class="item item-link" style="background-color: #000" @click="popup_handler()"  >
-     <img class="label bg-black text-white" :src="type.image" >
-     <h9>{{type.label}}</h9>
-   </div>
-   <div style="padding-left: -10px;width: 180px;margin-top: -10px;margin-left: -17px;">
-     <img src="statics/popup_boardbottom_1a.png"></div>
-   </div>
- </q-popover>
-
-<input class="text" maxlength="16" :value="'Demo String ' + n" style="width: 260px;">
+<div class="layout-view" style="background-color: black;">
 
 </div>
 
-<!-- Row End -->
-       </div>
-     </div>
-   </div>
- </div>
+<div slot="footer" class="toolbar">
+
+  <div class="group">
+      <button class="button1"><img src="statics/footer_photo_1a.png"></button>
+      <button class="button2">VERTICAL<br><img src="statics/footer_vertical_1a.png"></button>
+      <button class="button3">SCAN<br><img src="statics/footer_scan_1a.png"></button>
+      <button class="button4">HORIZONTAL<br><img src="statics/footer_hortizontal_1a.png"></button>
+      <button class=""><img src="statics/footer_photo_1b.png"></button>
+  </div>
+
+
+
+
 </div>
-
-
 </q-layout>
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-  </q-layout>
 </template>
 
 <style >
@@ -165,60 +136,66 @@ text-align: center;">
 width: 60px !important;
 height : 60px !important;}
 
-div.image_container {
-   width: 400px;
-   height: 50px;
-
-   input[type="text"]
-      {
-         width: 100px;
-         height: 30px;
-         border: 0.5px solid #CCC;
-      }
+.toolbar {
+  height: 90px;
+  background-color: #29ABE2;
+  padding-left: 10px;
 }
 
-h7 {
-   position: absolute;
-   top: 219px;
-   width: 5%;
+.button1 {
+  padding-top: 65px;
+  margin-left: -15px;
 }
 
+.button2 {
+  padding-top: 65px;
+  margin-left: -25px;
+  font-size: 8pt;
+  font-family: Helvetica, sans-serif;
+}
 
-.wrapper {
-      overflow-y: auto;
-      max-height: 100%;
-      width: 400px;
-      padding-left: 15px;
-
-
-  }
-
-  .wrapper::-webkit-scrollbar{
-    width: 18px;
-    /*height: 50px;*/
-    /*border-radius: 15px;*/
-  }
-
-  .wrapper::-webkit-scrollbar-track{
-    max-height: 100%;
-    /*background: #DDD;*/
-    /*border-radius: 20px;*/
-  }
-
-
-  ::-webkit-scrollbar-thumb{
-    width: 28px;
-    background-color:#808080;
-    background: url('~/statics/scroll_rig_1a.png');
+.button2:hover {
+    background: url('~/statics/footer_vertical_1b.png');
     background-repeat: no-repeat;
-    /*background: #49AEC0;*/
-    /*border: 5px solid #CCEEF4;*/
-    /*border-radius: 15px;*/
-  }
+    background-position: bottom;
+}
+
+.button3 {
+  padding-top: 65px;
+  margin-left: -25px;
+  font-size: 8pt;
+  font-family: Helvetica, sans-serif;
+}
+
+.button3:hover {
+    background: url('~/statics/footer_scan_1b.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.button4 {
+  padding-top: 65px;
+  margin-left: -25px;
+  font-size: 8pt;
+  font-family: Helvetica, sans-serif;
+}
+
+.button4:hover {
+    background: url('~/statics/footer_hortizontal_1b.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 
 
 </style>
 
 
 <script>
+export default {
+  data () {
+    return {
+      search: ''
+    }
+  }
+}
 </script>
