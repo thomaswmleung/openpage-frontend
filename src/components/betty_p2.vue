@@ -53,11 +53,11 @@
       text-align: center;
       color: black;">
         <div style="
-        font-size: 14pt;
+        font-size: 13pt;
         font-family: Helvetica, sans-serif;
         font-weight: bold;
         padding-bottom: 5px;">
-          OpenPage
+          OpenPageO2O
         </div>
       </q-toolbar-title>
 

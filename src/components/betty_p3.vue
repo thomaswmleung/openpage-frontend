@@ -118,13 +118,13 @@
       <img src="statics/op_bluecard_1d.png"
       style="width: 272px; height: 371px">
       <div class="form_container" style="">
-      <div><h1>Subject:</h1>
+      <div><h1>Subject:<span style="color:red">*</span></h1>
       <q-select type="list" v-model="select" :options="selectOptions"></q-select></p></div>
 
-      <div><h2>Domain:</h2>
+      <div><h2>Domain:<span style="color:red">*</span></h2>
       <q-select type="list" v-model="select" :options="selectOptions2"></q-select></p></div>
 
-      <div><h3>Sub-domain:</h3>
+      <div><h3>Sub-domain:<span style="color:red">*</span></h3>
       <q-select type="list" v-model="select" :options="selectOptions3"></q-select></p></div>
 
       <div><h4>Particular:</h4>
@@ -216,10 +216,11 @@ height : 60px !important;}
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top:6%
+  margin-top:15%
 }
   .openpage1 .form_container{
     position: absolute;
+    
     padding-left: 110px;
     top: 40px;
     left: 0px;

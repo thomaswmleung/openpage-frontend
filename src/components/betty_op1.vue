@@ -44,7 +44,8 @@
 
 
         <h1>
-        iLearners OpenPage <br>Artificial Intelligence for EdTech</h1>
+        <span style="font-size:1.2em;font-weight:bold">iLearners OpenPage </span><br>
+        <span style="">AI for Education</span></h1>
 
 
       <button @click="$refs.rightDrawer.open()" style="color: black;">
@@ -73,10 +74,10 @@
 <div class="row wrap text-center" style=" overflow-x: scroll; background:white; width: 100%;">
 
   <div id="image1">
-    <img src="statics/op_vid_logo1a-01.png" width="70px" height="90px"></div>
+    <img src="statics/op_vid_logo1a-01.png" height="120px"></div>
 
-<div class="card" style="width: 100%; margin-left:10px background:none; box-shadow:none">
-    <h2>"Teaching and Publishing have never been easier….”</h2>
+<div class="card" style="width: 100%; background:none;box-shadow:none;margin-top:-1.5em;margin-bottom:-1em">
+    <h2>"Teaching and Publishing have never been easier with EdTech.”</h2>
 </div>
 
 <div class="group">
