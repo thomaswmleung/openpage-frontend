@@ -57,7 +57,7 @@
         font-family: Helvetica, sans-serif;
         font-weight: bold;
         padding-bottom: 5px;">
-          OpenPage
+          OpenPageO2O
         </div>
       </q-toolbar-title>
 
@@ -222,6 +222,15 @@ h9 {
     align-items: center;
   }
 
+  ::-moz-selection { /* Code for Firefox */
+      color: black;
+      background: #F8B62D;
+  }
+
+  ::selection {
+    color: black;
+    background: #F8B62D;
+  }
 </style>
 
 

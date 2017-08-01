@@ -57,7 +57,7 @@
         font-family: Helvetica, sans-serif;
         font-weight: bold;
         padding-bottom: 5px;">
-          OpenPage
+          OpenPageO2O
         </div>
       </q-toolbar-title>
 
@@ -220,7 +220,7 @@ height : 60px !important;}
 }
   .openpage1 .form_container{
     position: absolute;
-    
+
     padding-left: 110px;
     top: 40px;
     left: 0px;

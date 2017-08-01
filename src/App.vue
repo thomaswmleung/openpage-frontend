@@ -9,7 +9,11 @@
 /*
  * Root component
  */
-export default {}
+export default {
+  data:()=>{
+    return{}
+  }
+}
 </script>
 
 <style></style>

@@ -55,7 +55,7 @@
         font-family: Helvetica, sans-serif;
         font-weight: bold;
         padding-bottom: 5px;">
-        OpenPage
+        OpenPageO2O
       </div>
     </q-toolbar-title>
 

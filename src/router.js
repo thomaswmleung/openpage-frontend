@@ -22,15 +22,18 @@ export default new VueRouter({
 
   routes: [
     { path: '/intro', component: load('Index') }, // Default
-
-    { path: '/testing', component: load('testing') }, // Default
+    { path: 'myname', component: load('myname') }, // myname
+    { path: '/ani', component: load('ani') }, // test the svg animation
     { path: '/betty_op1', component: load('betty_op1') }, //
     { path: '/betty_p0', component: load('betty_p0') }, //
     { path: '/betty_p2', component: load('betty_p2') }, //
     { path: '/betty_p3', component: load('betty_p3') }, //
     { path: '/betty_p4', component: load('betty_p4') }, //
     { path: '/betty_p5', component: load('betty_p5') }, //
-    { path: '/betty_test', component: load('betty_test') }, // testing
+    { path: '/betty', component: load('betty') }, // testing
+
+    { path: '/betty0', component: load('betty0') }, //
+
         { path: '/', component: load('layout/main-layout') }, // Main-Layout
     { path: '*', component: load('Error404') } // Not found
   ]
