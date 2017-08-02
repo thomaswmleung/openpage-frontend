@@ -1,25 +1,16 @@
-<div id="app-6">
-  <p>{{ message }}</p>
-  <input v-model="message">
+<template>
+<div class="">
+   <todo></todo>
 </div>
-
-<style>
-
-
-</style>
+</template>
 
 <script>
-var app6 = new Vue({
-  el: '#app-6',
-  data: {
-    message: 'Hello Vue!'
-  }
-})</script>
-
-<!-- export default {
-  data () {
-    return {
-      search: ''
-    }
-  }
-} -->
+//Import Vue Component we previously defined
+import todo from "./common/todo-list-example"
+ export default {
+   //Tell the Vue that we are using that component
+   components: {
+      todo
+   }
+ }
+</script>

@@ -11,13 +11,28 @@
 
   <svg class="tree-left" width="100%" height="100%" viewBox="0 -10 77 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Tree-Left"><rect id="Tree-Left-Base" x="33.171" y="42.234" width="10.32" height="104.766" style="fill:#35495e;"/><ellipse id="Tree-Left-Circle-Bottom" cx="38.331" cy="59.367" rx="38.331" ry="36.122" style="fill:#41b883;"/><ellipse id="Tree-Left-Circle-Top" cx="38.331" cy="23.245" rx="24.666" ry="23.245" style="fill:#41b883;"/></g></svg>
 
-
-
-
   <svg class="tree-right" width="100%" height="100%" viewBox="0 -16 110 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Tree-Right"><rect id="Tree-Right-Base" x="49.615" y="54.96" width="10.32" height="115.2" style="fill:#35495e;"/><ellipse id="Tree-Right-Circle" cx="54.775" cy="56.76" rx="54.775" ry="56.76" style="fill:#41b883;"/></g></svg>
 
   <ellipse id="Tree-Right-Circle" cx="54.775" cy="56.76" rx="54.775" ry="56.76" style="fill:#41b883;"/>
   <rect id="Tree-Right-Base" x="49.615" y="54.96" width="10.32" height="115.2" style="fill:#35495e;"/>
+
+    </svg>
+
+    <svg width="100%" height="100%" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+
+    <rect x="20" y="20" width="250" height="250"
+    style="fill:blue;stroke:pink;stroke-width:5;
+    opacity:0.9"/>
+
+    <rect x="20" y="20" rx="30" ry="20" width="500"
+    height="1000" style="fill:red;stroke:black;
+    stroke-width:5;opacity:0.5"/>
+
+
+
+
+  </svg>
 
 </div>
 
@@ -101,7 +116,7 @@ animation: slideInBounce 1s 1,
 @keyframes slideInBounce {
   0%{
     transform: rotate(-180deg);
-    top: -100%;
+    top: -50%;
   }
  70%{
     transform: rotate(-180deg);
