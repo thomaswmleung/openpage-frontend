@@ -173,7 +173,7 @@
 </div>
 
 <div class="card" style="width: 100%; margin-left:10px background:none; box-shadow:none">
-<div><br><br><h9> Privacy   |   Policy   |   Terms of Use & Disclaimer
+<div><br><br><h9> Privacy Policy   |   Terms of Use & Disclaimer
 |   Accessibility   |   Sitemap</h9>
 <br><br><h10>Copyright © 2017 iLearners Openpage All Rights Reserved.</h10></div></div>
 

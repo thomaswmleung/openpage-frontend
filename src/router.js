@@ -21,8 +21,9 @@ export default new VueRouter({
    */
 
   routes: [
+
     { path: '/intro', component: load('Index') }, // Default
-    { path: 'myname', component: load('myname') }, // myname
+    { path: '/myname', component: load('myname') }, // myname
     { path: '/ani', component: load('ani') }, // test the svg animation
     { path: '/betty_op1', component: load('betty_op1') }, //
     { path: '/betty_p0', component: load('betty_p0') }, //
@@ -32,6 +33,8 @@ export default new VueRouter({
     { path: '/betty_p5', component: load('betty_p5') }, //
     { path: '/betty', component: load('betty') }, // testing
     { path: '/betty_p6', component: load('betty_p6') }, //
+    { path: '/betty_glow1', component: load('betty_glow1') }, //
+    { path: '/betty_but', component: load('betty_but') }, //
     { path: '/', component: load('layout/main-layout') }, // Main-Layout
     { path: '*', component: load('Error404') } // Not found
   ]

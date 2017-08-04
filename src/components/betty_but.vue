@@ -1,18 +1,18 @@
 <template>
-  <svg>
-      <path id="motionPath" fill="none" stroke="#FFF" stroke-miterlimit="10" d="M-35.5,25.5c25.25-29.28,57.32-11.95,79.9,9S81,87.39,71.5,110.5s-46,33-75,7C-19.38,103.26-60.75,54.78-35.5,25.5Z"/>
 
-      <circle id="circle" r="10" cx="0" cy="0" fill="tomato" />
+  <div class="butterfly">
+    <div class="leftwing">
+        <img src="statics/glow_butt_l.png">
+      </div>
+      <div class="body">
+  			<img src="statics/glow_butt_b.png">
+  		</div>
+      	<div class="rightwing">
+      		<img src="statics/glow_butt_r.png">
+      	</div>
+  	</div>
 
-       <animateMotion
-                xlink:href="#circle"
-                dur="5s"
-                begin="0s"
-                fill="freeze"
-                repeatCount="indefinite">
-         <mpath xlink:href="#motionPath" />
-       </animateMotion>
-     </svg>
+
 </template>
 
 <style>
