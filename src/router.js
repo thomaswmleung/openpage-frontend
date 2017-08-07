@@ -31,10 +31,11 @@ export default new VueRouter({
     { path: '/betty_p3', component: load('betty_p3') }, //
     { path: '/betty_p4', component: load('betty_p4') }, //
     { path: '/betty_p5', component: load('betty_p5') }, //
-    { path: '/betty', component: load('betty') }, // testing
+    { path: '/betty', component: load('betty') }, // vue
     { path: '/betty_p6', component: load('betty_p6') }, //
     { path: '/betty_glow1', component: load('betty_glow1') }, //
-    { path: '/betty_but', component: load('betty_but') }, //
+    { path: '/betty_glow2', component: load('betty_glow2') }, //
+    { path: '/betty_but', component: load('betty_but') }, // testing
     { path: '/', component: load('layout/main-layout') }, // Main-Layout
     { path: '*', component: load('Error404') } // Not found
   ]

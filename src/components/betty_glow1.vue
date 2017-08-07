@@ -135,6 +135,13 @@
       文字 文字 文字 文字 文字
       </p>
       <button class="button7">更 多</button></div></div>
+
+      <q-modal ref="basicModal" :content-css="{padding: '50px', minWidth: '50vw'}">
+        <h4>Basic Modal</h4>
+        <p v-for="n in 25">Scroll down to close</p>
+        <button class="primary" @click="$refs.basicModal.close()">Close</button>
+      </q-modal>
+
   <div class="auto"><div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
     <h4>從個人化生㓉事件方式<br>第一身學習以學生為中心</h4>
       <p class="f5 lh-copy">
@@ -153,6 +160,15 @@
       </p>
       <button class="button9">更 多</button></div>
 </div>
+<div class="auto"><div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
+  <h4>以價值學習效果層次<br>而不用分數評鑑學習成果</h4>
+    <p class="f5 lh-copy">
+      文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
+      文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
+      文字 文字 文字 文字 文字
+    </p>
+    <button class="button10">更 多</button></div></div>
+
   <div class="auto"><div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
     <h4>以價值學習效果層次<br>而不用分數評鑑學習成果</h4>
       <p class="f5 lh-copy">
@@ -160,7 +176,7 @@
         文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
         文字 文字 文字 文字 文字
       </p>
-      <button class="button10">更 多</button></div></div>
+      <button class="button11">更 多</button></div></div>
 </div>
 
 
@@ -383,7 +399,7 @@ h12 {
      font-size: 12px;
      text-align: center;
      color: #FFF;
-     background-color: #35B2E8;
+     background-color: #953A90;
      height: 20px;
      width: 70px;
      margin-left: auto;
@@ -395,7 +411,7 @@ h12 {
      font-size: 12px;
      text-align: center;
      color: #FFF;
-     background-color: #E95513;
+     background-color: #E95205;
      height: 20px;
      width: 70px;
      margin-left: auto;
@@ -407,7 +423,7 @@ h12 {
      font-size: 12px;
      text-align: center;
      color: #FFF;
-     background-color: #C8C9CA;
+     background-color: #ffdc00;
      height: 20px;
      width: 70px;
      margin-left: auto;
@@ -419,7 +435,19 @@ h12 {
      font-size: 12px;
      text-align: center;
      color: #FFF;
-     background-color: #F08B2D;
+     background-color: #6ebc66;
+     height: 20px;
+     width: 70px;
+     margin-left: auto;
+     /*cursor: pointer;*/
+}
+
+.button11{
+     float: right;
+     font-size: 12px;
+     text-align: center;
+     color: #FFF;
+     background-color: #f29900;
      height: 20px;
      width: 70px;
      margin-left: auto;
@@ -569,6 +597,50 @@ export default {
   data () {
     return {
       border: false
+    }
+  }
+}
+</script>
+
+<script>
+import { Toast } from 'quasar'
+export default {
+  data () {
+    return {
+      types: [
+        {
+          label: 'Basic',
+          ref: 'basicModal'
+        },
+        {
+          label: 'Basic with Events',
+          ref: 'eventsModal'
+        },
+        {
+          label: 'With Layout',
+          ref: 'layoutModal'
+        },
+        {
+          label: 'Always Minimized',
+          ref: 'minimizedModal'
+        },
+        {
+          label: 'Always Maximized',
+          ref: 'maximizedModal'
+        }
+      ],
+      position: 'bottom'
+    }
+  },
+  methods: {
+    notify (eventName) {
+      Toast.create(`Event "${eventName}" was triggered.`)
+    },
+    openSpecialPosition (position) {
+      this.position = position
+      this.$nextTick(() => {
+        this.$refs.positionModal.open()
+      })
     }
   }
 }
