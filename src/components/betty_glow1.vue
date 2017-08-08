@@ -12,7 +12,7 @@
 
            <hr>
            <div class="list-label">Layout Components</div>
-           <q-drawer-link to="/showcase/layout/toolbar">
+           <q-drawer-link to="/betty_glow1">
              首頁
            </q-drawer-link>
            <q-drawer-link to="/showcase/layout/tabs">
@@ -167,10 +167,12 @@
       文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
       文字 文字 文字 文字 文字
     </p>
-    <button class="button10">更 多</button></div></div>
+    <button class="button10" >更 多</button></div></div>
+
+<!-- @click="/betty_glow2" -->
 
   <div class="auto"><div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
-    <h4>以價值學習效果層次<br>而不用分數評鑑學習成果</h4>
+    <h4>培養共通能力<br>利用資訊科技，進行課後評估</h4>
       <p class="f5 lh-copy">
         文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
         文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
