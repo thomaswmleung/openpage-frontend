@@ -81,7 +81,7 @@
 
 <div class="row wrap text-center" style=" overflow-x: scroll; background:white; width: 100%;">
 
-  <div class="card" style="margin-top: 5px;">
+  <div style="margin-top: 5px;">
 
     <div style="text-align: center;">
         <h1>個人發展</h1></div>
@@ -117,11 +117,11 @@
        <h5>堅毅</h5>
        <br><p><h6>中國語文</h6></p>
         <blockquote style="background: #f9f9f9;
-          border-left: 10px solid #ff5555;"><h3>做事堅忍,力不慣徹始終</h3></blockquote>
+          border-left: 5px solid #ff5555;"><h3>做事堅忍，力不慣徹始終</h3></blockquote>
        <br><p><h6>英國語文</h6></p>
        <br><p><h6>數學</h6></p>
         <blockquote style="background: #f9f9f9;
-          border-left: 10px solid #a984bc;"><h3>具有鍥而不捨的鑽研精神,努力嘗試解決令人困惑的數學難題</h3></blockquote>
+          border-left: 5px solid #a984bc; "><h3>具有鍥而不捨的鑽研精神，努力嘗試解決令人困惑的數學難題</h3></blockquote>
        <br><p><h6>常識</h6></p>
        <button class="tertiary" @click="$refs.ma1.close()">返回</button>
      </q-modal>

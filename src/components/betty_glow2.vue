@@ -96,7 +96,7 @@
 
 
 
-    <div class="card" style="margin-top: 5px;">
+    <div style="margin-top: 5px; width:100%;">
 
       <div class="list item-delimiter">
         <div style="background-color:#c6add8;">
@@ -229,22 +229,6 @@ h4 {
 
 }
 
-
-.openpage1{
-  position: relative;
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:15%
-}
-  .openpage1 .form_container{
-    position: absolute;
-
-    padding-left: 110px;
-    top: 40px;
-    left: 0px;
-  }
 
   .box1{
     position: relative;
