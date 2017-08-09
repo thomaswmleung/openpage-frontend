@@ -134,7 +134,7 @@
       文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
       文字 文字 文字 文字 文字
       </p>
-      <button class="button7">更 多</button></div></div>
+      <router-link to="betty_glow4"><button class="button10">更 多</button></router-link></div></div>
 
       <q-modal ref="basicModal" :content-css="{padding: '50px', minWidth: '50vw'}">
         <h4>Basic Modal</h4>
@@ -167,7 +167,10 @@
       文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
       文字 文字 文字 文字 文字
     </p>
-    <button class="button10" >更 多</button></div></div>
+    <router-link to="betty_glow2"><button class="button10">更 多</button></router-link>
+
+
+  </div></div>
 
 <!-- @click="/betty_glow2" -->
 

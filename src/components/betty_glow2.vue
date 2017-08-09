@@ -115,7 +115,8 @@
             </div>
             <div class="row gutter sm-column">
               <div class="auto" style="text-align: center;">
-                <div id="example-3"><button class="button1" @click="clickMethod()">確定</button>
+                <div id="example-3"><router-link to="betty_glow3"><button class="button1">確定</button></router-link>
+
               </div>
             </div>
             </div>

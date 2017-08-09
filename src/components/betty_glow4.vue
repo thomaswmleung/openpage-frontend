@@ -91,7 +91,7 @@
 理及社羣健康的基本知識，鼓勵學生以正面、積極態度面對成長，以至在未來接受各項挑戰時，能作出適當的考慮和抉擇</h3>
   </blockquote>
 
-  <div class="items-center column justify-center full-width full-height">
+  <div class="items-center column justify-center full-width">
     <q-transition name="slide">
       <q-stepper class="orange" @finish="finish()" ref="stepper" v-show="!finished">
         <q-step title="日期">
@@ -99,13 +99,8 @@
             <q-datetime v-model="model" type="date"></q-datetime>
           </p>
         </q-step>
-        <q-step class="orange" title="Create an ad group" :ready="ready">
-          An ad group contains one or more ads which target a shared set of keywords.
-          <br><br>
-          <label>
-            <q-toggle v-model="ready"></q-toggle>
-            Enable next step
-          </label>
+        <q-step class="orange" title="學習範圍" :ready="ready">
+          <q-select type="list" v-model="select1" :options="selectOptions"></q-select>
         </q-step>
         <q-step class="orange" title="Create an ad">
           Try out different ad text to see what brings in the most customers, and learn how to enhance your ads using features like ad extensions. If you run into any problems with your ads, find out how to tell if they're running and how to resolve approval issues.
@@ -214,5 +209,52 @@ export default {
       }
     }
   }
+}
+</script>
+
+<script>
+export default {
+  data () {
+    return {
+      select1: '',
+      multipleSelect: ['goog', 'twtr'],
+      selectOptions: [
+        {
+          label: '人與自己',
+          value: 'per1'
+        },
+        {
+          label: '人與家庭',
+          value: 'per2'
+        },
+        {
+          label: '人與社會',
+          value: 'per3'
+        },
+        {
+          label: '人與祖國',
+          value: 'per4'
+        },
+        {
+          label: '人與科學',
+          value: 'per5'
+        },
+        {
+          label: '人與環境',
+          value: 'per6'
+        },
+        {
+          label: '人與資訊',
+          value: 'per7'
+        },
+        {
+          label: '人與世界',
+          value: 'per8'
+        },
+  
+      ],
+
+}
+}
 }
 </script>
