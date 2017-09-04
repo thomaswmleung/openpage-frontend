@@ -43,9 +43,9 @@
       </button>
 
 
-        <h1>
+      <div style="width: 100%;"><h1>
         <span style="font-size:1.2em;font-weight:bold">iLearners OpenPage </span><br>
-        <span style="">AI for Education</span></h1>
+        <span style="">AI for Education</span></h1></div>
 
 
       <button @click="$refs.rightDrawer.open()" style="color: black;">
@@ -80,11 +80,11 @@
     <h2>"Teaching and Publishing have never been easier with EdTech.”</h2>
 </div>
 
-<div class="group">
-    <button class="button1"></button>
-    <button class="button2"></button>
-    <button class="button3"></button>
-    <button class="button4"></button>
+<div class="group" style="width: 100%;">
+    <button class="button1"><img src="statics/op_4frames1.png" width="100%"><div class="mobile-only" style="color:#35b2e8">OPENPAGE O2O</div></button>
+    <button class="button2"><img src="statics/op_4frames2.png" width="100%"><div class="mobile-only" style="color:#e95513">PAGINATION</div></button>
+    <button class="button3"><img src="statics/op_4frames3.png" width="100%"><div class="mobile-only" style="color:#b2b2b2">CHATGROUPS</div></button>
+    <button class="button4"><img src="statics/op_4frames5.png" width="100%"><div class="mobile-only" style="color:#f08b2d">OPENPAGE PLATFORM</div></button>
 </div>
 
 
@@ -99,33 +99,24 @@
 <div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
   <h3>OPENPAGE O2O</h3>
     <p class="f5 lh-copy">
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text
+   One of the key obstacles for educational content to flow freely across
+   users' devices is that incumbent stakeholders bundle content with technologies
+   in order to safeguard their proprietary positions. This condition of "content
+   silo" has been  successful in fending off newcomers, but also resulted in government intervening and blindly promoting eLearning.
     </p>
     <button class="button7">MORE</button></div>
 
 <div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
   <h4>PAGINATION</h4>
     <p class="f5 lh-copy">
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text
+   You can also create an adaptive work sheet for your class, or even compile an adaptive exercise book. Creating the books on Pageination OR AnyOneBook Page.(To be completed)
     </p>
     <button class="button8">MORE</button></div>
 
 <div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
   <h5>CHATGROUPS</h5>
     <p class="f5 lh-copy">
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text
+    (COMING SOON)
     </p>
     <button class="button9">MORE</button></div>
 
@@ -133,11 +124,8 @@
 <div class="card" style="width: 350px; height:320x; margin-left:10px background:none; box-shadow:none">
   <h6>OPENPAGE PLATFORM</h6>
     <p class="f5 lh-copy">
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text
+      Open Platform for Online Tutorial, Off Campus Learning Immersion and Skill Refinement
+      (To be completed)
     </p>
     <button class="button10">MORE</button></div>
 
@@ -296,7 +284,7 @@ h10 {
 
 .button1{
      float: center;
-     background-color: #35B2E8;
+     /*background-color: #35B2E8;*/
      height: 175px;
      width: 175px;
      /*cursor: pointer;*/
@@ -304,7 +292,7 @@ h10 {
 
 .button2{
      float: center;
-     background-color: #E95513;
+     /*background-color: #E95513;*/
      height: 175px;
      width: 175px;
      /*cursor: pointer;*/
@@ -312,7 +300,7 @@ h10 {
 
 .button3{
      float: center;
-     background-color: #EEEEEF;
+     /*background-color: #EEEEEF;*/
      height: 175px;
      width: 175px;
      /*cursor: pointer;*/
@@ -320,7 +308,7 @@ h10 {
 
 .button4{
      float: center;
-     background-color: #F08B2D;
+     /*background-color: #F08B2D;*/
      height: 175px;
      width: 175px;
      /*cursor: pointer;*/
@@ -412,6 +400,7 @@ h10 {
       font-size: 12px;
       text-align: left;
       padding-left: 18px;
+      text-align: justify;
   }
 
 
@@ -432,5 +421,6 @@ h10 {
    height:97px;
    float: canter;
 }
+
 
 </style>
